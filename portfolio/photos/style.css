@@ -1,0 +1,125 @@
+@font-face {
+    font-family: CustomFont;
+    font-family: "Artik Light", sans-serif;
+    src: url("Croma\ Sans\ Extra\ Light.otf");
+}
+*{
+    font-family: CustomFont;
+}
+.body{
+    font-family: CustomFont;
+}
+.fleche{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 1%;
+    margin-right: 5%;
+}
+
+.fleche-droite{
+width: 30px;
+height: 30px;
+}
+
+.fleche-gauche{
+    width: 30px;
+    height: 30px;
+}
+.main-title{
+    margin-top: 4%;
+    text-align: center;
+}
+.container{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 7%;
+    gap: 100px;
+}
+.feuille{
+    flex-direction: column;
+    border: 1px solid gray ;
+    display: flex;
+}
+.arbre{
+    flex-direction: column;
+    border: 1px solid gray ;
+    display: flex;
+
+}
+.ours{
+    flex-direction: column;
+    border: 1px solid gray ;
+    display: flex;
+
+}
+.fleur{
+    flex-direction: column;
+    border: 1px solid gray ;     
+    display: flex;
+}
+
+.img-feuille{
+    border: 1px solid gray ;
+width: 350px;
+height: 350px;
+}
+.img-arbre{
+    border: 1px solid gray ;
+    width: 350px;
+height: 350px;
+
+}
+.img-ours{
+    border: 1px solid gray ;
+    width: 350px;
+height: 350px;
+
+}
+.img-fleur{
+    border: 1px solid gray ;
+    width: 350px;
+height: 350px;
+
+}
+
+.vert{
+    color: green;
+}
+
+.text{
+    margin-left: 20px;
+}
+
+.info{
+    border-top: 1px solid gray ;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: space-around;
+}
+.date{
+    display: flex;
+}
+
+.like{
+    gap: 10px;
+    display: flex;
+}
+
+.rdv{
+    margin-left: 15%;
+    margin-top: 20%;
+    width: 15px;
+    height: 15px;
+}
+.coeur{
+    margin-top: 28%;
+    width: 15px;
+    height: 15px;
+}
+.bulle{
+    width: 15px;
+    height: 15px;
+    margin-top: 27%;
+}

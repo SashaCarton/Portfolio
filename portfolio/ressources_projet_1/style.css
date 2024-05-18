@@ -1,0 +1,600 @@
+body{
+  width: 100%;
+  overflow-x:hidden;
+}
+.tete{
+    display: flex;
+    justify-content: right;
+    margin-right: 10%;
+
+}
+.text-haut{
+  margin-top: 0.5%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: right;
+}
+.icone-tete{
+    width: 10%;
+    margin-right: 80%;
+}
+
+.container1{
+  margin-top: 1%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 0.5;
+}
+.backgroundBloc1{ 
+    margin-top: 0%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height:80% ;
+}
+.Sun{
+    margin-left: 15%;
+    margin-top: 10%;
+    display: flex;
+    font-size: 500%;
+    color: white;
+    line-height: 1%;
+    justify-content: left;
+    width: 40%;
+    z-index: 1;
+}
+.text1{
+    min-height: 100%;
+    min-width: 100%;
+    margin-left: 15%;
+    font-size: 200%;
+    color: white;
+    gap: 100%;
+}
+.icon1{
+    width: 10%;
+    height: 10%;
+    margin-top: 1%;
+}
+
+/* Partie Recycling */
+.Partie2{
+  text-align: center;
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.recycling{
+  background: rgb(0,255,188);
+  background: linear-gradient(90deg, rgba(0,255,188,1) 0%, rgba(0,255,231,0.927608543417367) 42%, rgba(0,212,255,1) 100%);
+  display: 	flex;
+  flex-direction: column;
+  width: 15%;
+  height: 40%;
+  color: white;
+  font-size: 200%;
+
+}
+.icone-recycler{
+  margin-top: 25%;
+  margin-left: 40%;
+  width: 20%;
+}
+.dechet{
+  margin-top: 20%;
+  width: 100%;
+  height: 20%;
+}
+.Ecosystem{
+  background: rgb(0,255,188);
+  background: linear-gradient(90deg, rgba(0,255,188,1) 0%, rgba(0,255,231,0.927608543417367) 42%, rgba(0,212,255,1) 100%);
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 40%;
+  color: white;
+  font-size: 200%;
+}
+.goutte{
+  margin-left: 40%;
+  margin-top: 25%;
+  width: 20%;
+  height: 20%;
+ }
+
+.herbe{
+  margin-top: 20%;
+  width: 100%;
+  height: 50%;
+}
+.Organic{
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  background: rgb(0,255,188);
+  color: white;
+  font-size: 200%;
+  background: linear-gradient(90deg, rgba(0,255,188,1) 0%, rgba(0,255,231,0.927608543417367) 42%, rgba(0,212,255,1) 100%);
+}
+
+.feuille{
+  margin-left: 40%;
+  margin-top: 25%;
+  width: 20%;
+}
+.femme{
+  margin-top: 20%;
+  width: 100%;
+}
+.Biology{
+  width: 15%;
+  height: 40%;
+  font-size: 200%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, rgba(0,255,188,1) 0%, rgba(0,255,231,0.927608543417367) 42%, rgba(0,212,255,1) 100%);
+}
+.terre{
+  margin-left: 35%;
+  margin-top: 20%;
+  width: 30%;
+
+}
+.dauphin{
+  margin-top: 15%;
+  width: 100%;
+}
+
+/* Partie 3 Everyday ... */
+.Titre3{
+  margin-top: 5%;
+  text-align: center;
+  font-size: 300%;
+  color: gray;
+}
+.container3{
+  margin-top: 5%;
+  display: flex;
+  line-height: 0;
+}
+.pouce{
+  margin-left: 15%;
+  display: flex;
+  color: aqua;
+  font-size: 200%;
+  gap: 10px;
+  width: 19%;
+}
+.img-pouce{
+  color: rebeccapurple;
+  width: 30%;
+}
+.img-billet{
+  width: 30%;
+}
+.billet{
+  color: lightskyblue;
+  display: flex;
+  font-size: 200%;
+  width: 19%;
+  line-height: 0;
+  margin: 0;
+}
+.img-man{
+  width: 30%;
+}
+.man{
+  color: lightgreen;
+  display: flex;
+  font-size: 200%;
+  width: 19%;
+}
+.img-coeur{
+  width: 30%;
+}
+.coeur{
+  display: flex;
+  color: rgb(202, 202, 24);
+  font-size: 200%;
+  width: 19%;
+}
+
+.gray{
+color: gray;
+font-size: 60%;
+}
+.money{
+  color: gray;
+}
+.button3{
+  margin-top: 2%;
+  margin-left: 45%;
+  width: 10%;
+  height: 10%;
+  cursor: pointer;
+  font-size: 150%;
+  border-radius: 1rem;
+  background-color:lightgreen;
+  transition: 0.1s;
+  border: white;
+}
+
+button ::after{
+  content:'';
+  width: 100%;
+  height: 100%;
+  background-image:radial-gradient( circle farthest-corner at 10% 20%, rgba(lightgreen)17,8,rgba(green)100,2%);
+  filter: blur(15px);
+  z-index: -1;
+}
+button:active{
+  transform: scale(0,9)rotate(3deg);
+  background: radial-gradient( circle farthest-corner at 10% 20%, rgba(lightgreen)17,8,rgba(green)100,2%);
+  transition: 0,5s;
+}
+/* Partie 4 save the world */
+
+
+.Partie4{
+  margin-top: 10%;
+  height: 100%;
+  background-image: url(photos/sky.jpg);
+  position: absolute;
+}
+.Save{
+  color: white;
+  margin-top: 5%;
+  font-size: 300%;
+  text-align: center;
+}
+.title4{
+  margin-top: 5%;
+text-align: center;
+font-size: 150%;
+color: gray;
+}
+
+
+.container4{
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.under-container4{
+  width: 100%;
+  display: flex;
+  line-height: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.hover{
+  transition: 1s;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.img4-1{
+  overflow: hidden;
+  transition: 1s;
+  position: relative;
+  z-index: 2;
+}
+
+.img4{
+  transition: 1s;
+  width: 100%;
+  height: 100%;
+}
+
+.img4-1:hover .img4{
+  z-index: 1;
+  background-color: bisque;
+  filter: brightness(50%);
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+.img4-1:hover .hover{
+  transition: 1s;
+  opacity: 1;
+  width:100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+.black{
+  color: black;
+}
+.loupe{
+  width: 15%;
+  top: 0;
+  position: absolute;
+  margin-left: 33%;
+  margin-top: 28%;
+
+}
+
+.paper-pin{
+  width: 15%;
+  top: 0;
+  position: absolute;
+  margin-top: 28%;
+  margin-left: 51%;
+}
+.under-text4{
+  position: absolute;
+  top: 70%;
+  background-color: white;
+  height: 30%;
+  width: 100%;
+}
+.gray4{
+  text-align: left;
+  margin-left: 10%;
+  line-height: 0;
+  color: rgb(99, 97, 97);
+  font-size: 150%;
+}
+
+.green4{
+  margin-left: 10%;
+  text-align: left;
+  line-height: 0;
+  color: green;
+  font-size: 80%;
+}
+.OurMission{
+  margin-top: 60%;
+  text-align: center;
+}
+.container5{
+  margin-top: 5%;
+display: flex;
+justify-content: center;
+}
+.under-container5-1{
+display: flex;
+flex-direction: column;
+justify-content:right;
+text-align: right;
+margin-right: 1%;
+}
+.haut5{
+
+
+}
+.bas5{
+
+}
+.title5{
+font-size: 150%;
+font-weight: 1000;
+}
+.under-container5-2{
+  justify-content: center;
+  gap: 50%;
+  display: flex;
+  width:10%;
+
+}
+.left5{
+  display: flex;
+  flex-direction: column;
+  gap: 50%;
+  text-align: right;
+}
+.right5{
+  display: flex;
+  flex-direction: column;
+  gap: 50%;
+  text-align: left;
+}
+.under-container5-3{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  margin-left: 1%;
+}
+
+
+.img5-1{
+  width: 110%;
+  border-radius: 100%;
+  border: 1px solid gray;
+
+}
+.img5-2{
+  width: 110%;
+  border-radius: 100%;
+  border: 1px solid gray;
+
+}
+.img5-3{
+  width: 110%;
+  border-radius: 100%;
+  border: 1px solid gray;
+
+}
+.img5-4{
+  width: 110%;
+  border-radius: 100%;
+  border: 1px solid gray;
+
+}
+.gray5{
+color: gray;
+}
+
+
+/* Partie 6 */
+
+.fleche6{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 1%;
+  margin-right: 5%;
+}
+
+.fleche-droite6{
+width: 30px;
+height: 30px;
+transition: 0.5s;
+}
+
+.fleche-gauche6{
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+}
+.fleche-droite6:hover{
+  cursor: pointer;
+  filter: brightness(1%);
+  transition: 1s;
+}
+.fleche-gauche6:hover{
+  cursor: pointer;
+  filter: brightness(1%);
+  transition: 1s;
+}
+.main-title6{
+  margin-top: 4%;
+  text-align: center;
+}
+.container6{
+  display: flex;
+  margin-left: 100px;
+  margin-top: 7%;
+  gap: 100px;
+}
+.feuille6{
+  flex-direction: column;
+  border: 1px solid gray ;
+  display: flex;
+   transition: 0.5s;
+}
+.feuille6:hover{
+  cursor: pointer;
+  transition: 0.5s;
+  scale: 1.1;
+}
+.arbre6{
+  flex-direction: column;
+  border: 1px solid gray ;
+  display: flex;
+    transition: 0.5s;
+
+}
+.arbre6:hover{
+  cursor: pointer;
+  transition: 0.5s;
+  scale: 1.1;
+}
+.ours6{
+  flex-direction: column;
+  border: 1px solid gray ;
+  display: flex;
+    transition: 0.5s;
+
+}
+.ours6:hover{
+  cursor: pointer;
+  transition: 0.5s;
+  scale: 1.1;
+}
+.fleur6{
+  flex-direction: column;
+  border: 1px solid gray ;     
+  display: flex;
+    transition: 0.5s;
+}
+.fleur6:hover{
+  cursor: pointer;
+  transition: 0.5s;
+  scale: 1.1;
+}
+
+.img-feuille6{
+  border: 1px solid gray ;
+width: 350px;
+height: 350px;
+}
+.img-arbre6{
+  border: 1px solid gray ;
+  width: 350px;
+height: 350px;
+
+}
+.img-ours6{
+  border: 1px solid gray ;
+  width: 350px;
+height: 350px;
+
+}
+.img-fleur6{
+  border: 1px solid gray ;
+  width: 350px;
+height: 350px;
+
+}
+
+.vert6{
+  color: green;
+}
+
+.text6{
+  margin-left: 20px;
+}
+
+.info6{
+  border-top: 1px solid gray ;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: space-around;
+}
+.date6{
+  display: flex;
+}
+
+.like6{
+  gap: 10px;
+  display: flex;
+}
+
+.rdv6{
+  margin-left: 15%;
+  margin-top: 20%;
+  width: 15px;
+  height: 15px;
+}
+.coeur6{
+  margin-top: 28%;
+  width: 15px;
+  height: 15px;
+}
+.bulle6{
+  width: 15px;
+  height: 15px;
+  margin-top: 27%;
+}
