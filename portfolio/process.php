@@ -1,4 +1,3 @@
-<link href="styleprocess.css" rel="stylesheet">
 <?php
 // Assurez-vous que le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -42,5 +41,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Accès refusé.";
 }
 
+// Redirection vers la page d'accueil
+header("Location: https://scarton.lyceestvincent.fr/Portfolio/index.html");
+exit;
 ?>
 <a href="https://scarton.lyceestvincent.fr/Portfolio/index.html">Retour</a>
