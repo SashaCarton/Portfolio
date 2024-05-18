@@ -1,4 +1,5 @@
 <?php
+	
 	#Fonction � appeler pour se connecter � la base de donn�es
 	function connexionBdd() {
 		// Permet d'utiliser les variables d'identification pour la connexion
@@ -15,6 +16,9 @@
 		catch(PDOException $e){
 			die('Erreur : ' . $e->getMessage());
 		}
+
         return $co;
+		$_SESSION['username'] = $username;
+
 	}	
 ?>

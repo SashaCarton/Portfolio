@@ -626,6 +626,13 @@ overflow-x: hidden;
         font-family: 'Paul', sans-serif;
         white-space: nowrap;
     }
+    .trait {
+        rotate: 90deg;
+        border: #222222 solid 1px;
+        transform: rotate(90deg);
+        height: 80%;
+        margin: 5%;
+    }
 }
 
 /* Media Queries pour les appareils mobiles */
@@ -1017,7 +1024,8 @@ overflow-x: hidden;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: left;
+        background-color: #0056b3;
 
     }
 

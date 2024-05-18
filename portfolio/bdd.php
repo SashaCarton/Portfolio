@@ -7,9 +7,18 @@
     <link href="stylebdd.css" rel="stylesheet">
 </head>
 <body>
-    <a href="https://scarton.lyceestvincent.fr/Portfolio/index.html" class="button">Retour</a> <br>
+    <a href="../Portfolio/index.html" class="button">Retour</a> <br>
     <a href="https://phpmyadmin.alwaysdata.com" class="button">Connexion mysql</a>
+    <a href='deconnexion.php' class='button'>Déconnexion</a>
     <?php
+
+        session_start();
+        if (!isset($_SESSION['connected']) || $_SESSION['connected'] != true) {
+            header("Location: admin.php");
+            exit();
+        }
+
+    
     
     $servername = "mysql-lyceestvincent.alwaysdata.net";
     $username = "116313_scarton";
@@ -65,6 +74,8 @@
 
         // Fermeture de la connexion à la base de données
         mysqli_close($con);
+        // Déconnexion de la session
+        
     ?>
 </body>
 </html>
