@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="ressources/style.css" rel="stylesheet">
+  <link href="./portfolio/ressources/style.css" rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="ressources/script.ts" type="module"></script>
   <title>Sasha Carton</title>
@@ -20,19 +20,19 @@
       <div class="blocHorizontal">
         <div class="slide one">
           <div class="imgCircle">
-            <img src="ressources/assets/IMG_20231014_190308_447.jpg" alt="image sasha carton">
+            <img src="./portfolio/ressources/assets/IMG_20231014_190308_447.jpg" alt="image sasha carton">
             <div class="circle">
                 <a href="#apropos">À propos de moi</a>
             </div>
           </div>
           <div class="separation">
-            <a href="admin.php">Admin</a>
+            <a href="./portfolio/admin.php">Admin</a>
             <a href="#contact">Contact</a>
             <a href="#projets">Projets</a>
             <a href="#apropos">À propos</a>
-            <a href="https://github.com/SashaCarton"><img id="git" src="ressources/assets/logo.png"></a>
+            <a href="https://github.com/SashaCarton"><img id="git" src="./portfolio/ressources/assets/logo.png"></a>
             <a href="ressources/assets/cvSashaCarton.pdf" download="Cv Sasha carton.pdf"><img id="cv"
-                src="ressources/assets/curriculum-vitae.png"></a>
+                src="./portfolio/ressources/assets/curriculum-vitae.png"></a>
             <h3>SASHA CARTON</h3>
           </div>
           <p class="textOne">"Mon approche du design graphique se caractérise par la fusion de la créativité et de la
@@ -56,8 +56,8 @@
         </div>
         <div class="slide three">
           <div class="carousel">
-            <img src="ressources/assets/sun.PNG"><img src="ressources/assets/VetXProject.jpg" alt="" class="img3"><img
-              src="ressources/assets/miel.PNG" alt="" class="img3"><img src="ressources/assets/Accueil (non connecté).png"
+            <img src="./portfolio/ressources/assets/sun.PNG"><img src="./portfolio/ressources/assets/VetXProject.jpg" alt="" class="img3"><img
+              src="./portfolio/ressources/assets/miel.PNG" alt="" class="img3"><img src="./portfolio/ressources/assets/Accueil (non connecté).png"
               width="2280px" height="2px">
           </div>
           <div id="carousel">
@@ -92,34 +92,32 @@
         <div id="projets" class="slide five">
           <div class="trait"></div>
           <div class="line">
-            <a href="../portfolio/maintenance.html">Voir projet n°1</a>
+            <a href="./maintenance">Voir projet n°1</a>
             <p class="text5">En réponse à l'urgence environnementale, j'ai dirigé le développement d'une plateforme web
               dédiée à la sensibilisation à l'écologie urbaine. Cette initiative vise à informer et à mobiliser les
               citoyens autour des enjeux écologiques dans leur environnement quotidien.</p>
-            <img src="ressources/assets/sun.PNG">
+            <img src="./portfolio/ressources/assets/sun.PNG">
           </div>
           <div class="trait"></div>
           <div class="line">
-            <a href="../portfolio/maintenance.html">Voir projet n°2</a>
+            <a href="./maintenance">Voir projet n°2</a>
             <p class="text5">En tant que passionné des animaux, j'ai dirigé la création d'une
               plateforme en ligne dédiée à fournir des ressources et des outils précieux pour les professionnels
               vétérinaires. Cette initiative vise à soutenir la communauté vétérinaire dans son travail quotidien.</p>
-            <img id="imgVetX" src="ressources/assets/VetXProject.jpg">
+            <img id="imgVetX" src="./portfolio/ressources/assets/VetXProject.jpg">
           </div>
           <div class="trait"></div>
           <div class="line">
-            <a href="../portfolio/maintenance.html">Voir projet n°3</a>
-            <p class="text5">En réponse à l'urgence environnementale, j'ai dirigé le développement d'une plateforme web
-              dédiée à la sensibilisation à l'écologie urbaine. Cette initiative vise à informer et à mobiliser les
-              citoyens autour des enjeux écologiques dans leur environnement quotidien.</p>
-            <img src="ressources/assets/miel.PNG">
+            <a href="/projetNodevo/">Voir projet n°3</a>
+            <p class="text5">Dans le cadre de mon stage à Nodevo j'ai réalisé ce site web dans l'objectif de développer mes compétences et mes méthodes de travail.</p>
+            <img src="./portfolio/ressources/assets/miel.PNG">
           </div>
           <div class="trait"></div>
           <div class="line">
-            <a href="../portfolio/Repository-Math-index/index.php">Voir projet n°4</a>
+            <a href="./portfolio/Repository-Math-index/index.php">Voir projet n°4</a>
             <p class="text5">En tant qu'étudiant au lycée saint vincent, j'ai réalisé en coopération avec 3 autres camarades un site sur le thèmre des mathématique
               qui permet de consulter des exercices importer par les professeurs ou étudiants et qui est destiné à un usage quotidien.</p>
-            <img src="ressources/assets/Accueil (non connecté).png">
+            <img src="./portfolio/ressources/assets/Accueil (non connecté).png">
           </div>
         </div>
         <div class="slide six">
