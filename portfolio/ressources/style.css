@@ -289,10 +289,11 @@ overflow-x: hidden;
     .three .trait {
         position: absolute;
         top: 72vh;
-        left: 13vh;
-        transform: rotate(90deg);
+        left: 3.5vh;
+        transform: rotate(-180deg)!important;
         border: solid 1px #ffffff;
         width: 40vh;
+        height: 0;
     }
 
     .three img {
@@ -395,16 +396,17 @@ overflow-x: hidden;
     }
 
     .four h2 {
-        top: 35vh;
+        top: 38vh;
         left: 150vh;
         width: 70vh;
         color: #000;
-        font-size: 4vh;
+        font-size: 4vw;
         font-weight: 300;
-        line-height: 50px;
-        text-align: left;
+        line-height: 100px;
+        text-align: center;
         font-family: 'Morison';
         position: absolute;
+        transform: rotate(-90deg);
     }
 
     .container4 {
@@ -430,35 +432,51 @@ overflow-x: hidden;
         display: flex;
         gap: 5vh;
         width: 200vh;
+        color: #f0f0f0;
+    }
+    .trait {
+        rotate: 90deg;
+        border: #222222 solid 1px;
+        transform: rotate(90deg);
+        height: 80%;
+        margin: 5%;
     }
 
     .line {
+        margin-top: auto;
+        margin-bottom: auto;
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: start;
+        gap: 2vw;
         align-items: center;
+        background-color: #222222;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        height: 38vw;
+        border-radius: 25px;
     }
 
     .line img {
-        width: 60vh;
-        height: 35vh;
+        width: 30vw;
+        height: 15vw;
     }
 
     .five a {
         margin-top: 5vh;
         width: 50%;
         font-family: 'Morison';
-        font-size: 4vh;
+        font-size: 2vw;
         text-decoration: none;
-        color: #000000;
+        color: #f0f0f0;
         text-align: center;
     }
 
     .five a::after {
         display: block;
         content: '';
-        border-bottom: solid 1px #000000;
+        border-bottom: solid 1px #ffffff;
         transform: scaleX(0);
         transition: transform 250ms ease-in-out;
     }
@@ -470,10 +488,10 @@ overflow-x: hidden;
 
 
     .five p {
-        text-align: center;
-        width: 50%;
-        color: #525252;
-        font-size: 1.8vh;
+        text-align: left;
+        width: 70%;
+        color: #f0f0f0;
+        font-size: 1vw;
         font-family: 'Paul';
         font-weight: 300;
         line-height: 4vh;
@@ -482,10 +500,10 @@ overflow-x: hidden;
     /* Display n°6 */
     .six {
         position: relative;
-        margin-left: 125vh;
+        margin-left: 300vh;
         display: flex;
         gap: 5%;
-        background-color: #182233;
+        background-color: #222222;
         padding-left: 15vh;
         padding-right: 10vh;
     }
@@ -626,13 +644,7 @@ overflow-x: hidden;
         font-family: 'Paul', sans-serif;
         white-space: nowrap;
     }
-    .trait {
-        rotate: 90deg;
-        border: #222222 solid 1px;
-        transform: rotate(90deg);
-        height: 80%;
-        margin: 5%;
-    }
+    
 }
 
 /* Media Queries pour les appareils mobiles */

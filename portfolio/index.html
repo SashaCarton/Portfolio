@@ -57,7 +57,7 @@
         <div class="slide three">
           <div class="carousel">
             <img src="ressources/assets/sun.PNG"><img src="ressources/assets/VetXProject.jpg" alt="" class="img3"><img
-              src="ressources/assets/miel.PNG" alt="" class="img3"><img src="ressources/assets/portfolio.PNG"
+              src="ressources/assets/miel.PNG" alt="" class="img3"><img src="ressources/assets/Accueil (non connecté).png"
               width="2280px" height="2px">
           </div>
           <div id="carousel">
@@ -85,14 +85,14 @@
                 instant figé. Que ce soit en photographie de paysage, portrait ou événementielle, mes images racontent
                 des histoires uniques et évocatrices. Mon portfolio reflète mon engagement à explorer les différentes
                 dimensions visuelles et à créer des œuvres qui inspirent et émerveillent."</p>
-              <h2>Mes projets web</h2>
+              <h2>MES PROJETS WEB</h2>
             </div>
           </div>
         </div>
         <div id="projets" class="slide five">
           <div class="trait"></div>
           <div class="line">
-            <a href="projet1.html">Voir projet n°1</a>
+            <a href="../portfolio/maintenance.html">Voir projet n°1</a>
             <p class="text5">En réponse à l'urgence environnementale, j'ai dirigé le développement d'une plateforme web
               dédiée à la sensibilisation à l'écologie urbaine. Cette initiative vise à informer et à mobiliser les
               citoyens autour des enjeux écologiques dans leur environnement quotidien.</p>
@@ -100,16 +100,15 @@
           </div>
           <div class="trait"></div>
           <div class="line">
-            <a href="projet2.html">Voir projet n°2</a>
-            <p class="text5">En tant que passionné des animaux et de la santé animale, j'ai dirigé la création d'une
+            <a href="../portfolio/maintenance.html">Voir projet n°2</a>
+            <p class="text5">En tant que passionné des animaux, j'ai dirigé la création d'une
               plateforme en ligne dédiée à fournir des ressources et des outils précieux pour les professionnels
-              vétérinaires. Cette initiative vise à soutenir la communauté vétérinaire dans son travail quotidien et à
-              promouvoir les meilleures pratiques en matière de soins animaliers.</p>
+              vétérinaires. Cette initiative vise à soutenir la communauté vétérinaire dans son travail quotidien.</p>
             <img id="imgVetX" src="ressources/assets/VetXProject.jpg">
           </div>
           <div class="trait"></div>
           <div class="line">
-            <a href="projet2.html">Voir projet n°3</a>
+            <a href="../portfolio/maintenance.html">Voir projet n°3</a>
             <p class="text5">En réponse à l'urgence environnementale, j'ai dirigé le développement d'une plateforme web
               dédiée à la sensibilisation à l'écologie urbaine. Cette initiative vise à informer et à mobiliser les
               citoyens autour des enjeux écologiques dans leur environnement quotidien.</p>
@@ -117,12 +116,10 @@
           </div>
           <div class="trait"></div>
           <div class="line">
-            <a href="projet2.html">Voir projet n°4</a>
-            <p class="text5">En tant que passionné des animaux et de la santé animale, j'ai dirigé la création d'une
-              plateforme en ligne dédiée à fournir des ressources et des outils précieux pour les professionnels
-              vétérinaires. Cette initiative vise à soutenir la communauté vétérinaire dans son travail quotidien et à
-              promouvoir les meilleures pratiques en matière de soins animaliers.</p>
-            <img src="ressources/assets/portfolio.PNG">
+            <a href="../portfolio/Repository-Math-index/index.php">Voir projet n°4</a>
+            <p class="text5">En tant qu'étudiant au lycée saint vincent, j'ai réalisé en coopération avec 3 autres camarades un site sur le thèmre des mathématique
+              qui permet de consulter des exercices importer par les professeurs ou étudiants et qui est destiné à un usage quotidien.</p>
+            <img src="ressources/assets/Accueil (non connecté).png">
           </div>
         </div>
         <div class="slide six">
@@ -223,6 +220,18 @@
         // Appeler la fonction displayNextParagraph toutes les 3 secondes
         setInterval(displayNextParagraph, 5000);
       };
+        window.addEventListener('scroll', function() {
+          var scrollPosition = window.scrollX || window.pageXOffset || document.documentElement.scrollLeft;
+          var windowHeight = window.innerHeight;
+          var documentHeight = document.documentElement.scrollHeight;
+          var halfDocumentHeight = documentHeight / 2;
+
+          if (scrollPosition > halfDocumentHeight - windowHeight) {
+            document.body.style.backgroundColor = 'blue'; // Change the background color to blue
+          } else {
+            document.body.style.backgroundColor = 'white'; // Change the background color back to white
+          }
+        });
     </script>
 
 </body>
