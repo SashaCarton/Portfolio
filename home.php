@@ -10,7 +10,7 @@
     <div class="container">
     <h1>Bienvenue sur mon site</h1>
     <button onclick="window.location.href='/portfolio'" class="portfolio">Portfolio</button>
-    <button onclick="window.location.href='/projetNodevo'" class="portfolio">Projet Nodevo</button>
+    <button onclick="window.location.href='/ProjetNodevo'" class="portfolio">Projet Nodevo</button>
     </div>
 </body>
 </html>

@@ -10,17 +10,19 @@
         font-family: 'Paul';
         src: url('font/Paul-Grotesk-Stencil-Light.woff') format('woff');
     }
-body::-webkit-scrollbar-track {
-    background: #f0f0f0;
-}
 
-/* Pour le "thumb" (le curseur) de la barre de d�filement */
-/* Notez que Firefox ne prend pas en charge les styles personnalis�s pour le "thumb" */
-body::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 10px;
-    border: 3px solid #f0f0f0; /* Bordure autour du "thumb" */
-}
+    body::-webkit-scrollbar-track {
+        background: #f0f0f0;
+    }
+
+    /* Pour le "thumb" (le curseur) de la barre de d�filement */
+    /* Notez que Firefox ne prend pas en charge les styles personnalis�s pour le "thumb" */
+    body::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 10px;
+        border: 3px solid #f0f0f0;
+        /* Bordure autour du "thumb" */
+    }
 
     /* Reset Styles */
     * {
@@ -32,14 +34,15 @@ body::-webkit-scrollbar-thumb {
     /* Body Styles */
     body {
         overflow-x: hidden;
+        overflow-y: hidden;
         margin: 0;
         padding: 0;
         font-family: sans-serif;
-    }z
+    }
 
     /* Main Section */
     .main {
-overflow-x: hidden;
+        overflow-x: hidden;
         height: 100vh;
     }
 
@@ -91,7 +94,13 @@ overflow-x: hidden;
     .one img {
         width: 75vh;
         height: 75vh;
-        filter: grayscale(30%);
+        filter: grayscale(100%);
+        transition: 1s;
+    }
+
+    .one img:hover {
+        filter: grayscale(0%);
+        transition: 1s;
     }
 
     .textOne {
@@ -290,7 +299,7 @@ overflow-x: hidden;
         position: absolute;
         top: 72vh;
         left: 3.5vh;
-        transform: rotate(-180deg)!important;
+        transform: rotate(-180deg) !important;
         border: solid 1px #ffffff;
         width: 40vh;
         height: 0;
@@ -380,7 +389,10 @@ overflow-x: hidden;
         margin-left: 50vh;
     }
 
-
+    .line:hover {
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
 
     .text4 {
         margin-top: 10vh;
@@ -395,19 +407,6 @@ overflow-x: hidden;
         font-family: 'Paul';
     }
 
-    .four h2 {
-        top: 38vh;
-        left: 150vh;
-        width: 70vh;
-        color: #000;
-        font-size: 4vw;
-        font-weight: 300;
-        line-height: 100px;
-        text-align: center;
-        font-family: 'Morison';
-        position: absolute;
-        transform: rotate(-90deg);
-    }
 
     .container4 {
         margin-top: 10vh;
@@ -428,12 +427,27 @@ overflow-x: hidden;
     /* Display n°5 */
     .five {
         position: relative;
-        margin-left: 10vh;
+        margin-left: 26vh;
         display: flex;
         gap: 5vh;
         width: 200vh;
         color: #f0f0f0;
     }
+
+    .five h2 {
+        top: 38vh;
+        left: -70vw;
+        width: 100vw;
+        color: #000;
+        font-size: 5vh;
+        font-weight: 300;
+        line-height: 100px;
+        text-align: center;
+        font-family: 'Morison';
+        position: absolute;
+        transform: rotate(-90deg);
+    }
+
     .trait {
         rotate: 90deg;
         border: #222222 solid 1px;
@@ -456,11 +470,12 @@ overflow-x: hidden;
         padding-right: 5vw;
         height: 38vw;
         border-radius: 25px;
+        transition: 0.5s;
     }
 
     .line img {
-        width: 30vw;
-        height: 15vw;
+        width: 20vw;
+        height: 25vw;
     }
 
     .five a {
@@ -488,13 +503,17 @@ overflow-x: hidden;
 
 
     .five p {
+        position: absolute;
+        top: 10vw;
+        z-index: 3;
         text-align: left;
-        width: 70%;
+        width: 50%;
         color: #f0f0f0;
-        font-size: 1vw;
+        font-size: 1.25vw;
         font-family: 'Paul';
         font-weight: 300;
         line-height: 4vh;
+        filter: opacity(0);
     }
 
     /* Display n°6 */
@@ -584,7 +603,7 @@ overflow-x: hidden;
     }
 
     .container-contact {
-        margin-top: 10vh;
+        margin-top: 12vh;
         margin-left: 40vh;
         width: 50vh;
         padding: 5vh;
@@ -637,14 +656,15 @@ overflow-x: hidden;
 
     /* Display eight */
     .eight {
-        margin-top: 20vh;
+        margin-top: 25vh;
         display: flex;
         flex-direction: column;
         font-size: 8vh;
         font-family: 'Paul', sans-serif;
         white-space: nowrap;
+        padding-right: 10vw;
     }
-    
+
 }
 
 /* Media Queries pour les appareils mobiles */
@@ -992,7 +1012,7 @@ overflow-x: hidden;
 
     .four h2 {
         top: 110vw;
-        left: 25vw;
+        left: 12vw;
         color: #000000;
         font-size: 7vw;
         font-weight: 300;
@@ -1024,11 +1044,14 @@ overflow-x: hidden;
 
     /* Display n°5 */
     .five {
+        color: #ffffff;
         position: relative;
         margin-top: 30vw;
         display: flex;
         gap: 5vw;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .line {
@@ -1036,23 +1059,27 @@ overflow-x: hidden;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: left;
-        background-color: #0056b3;
-
+        background-color: #222222;
+        width: 70vw;
+        height: 130vw;
+        align-items: center;
     }
 
+
     .line img {
-        width: 90vw;
-        height: 60vw;
+        top: 50vw;
+        position: absolute;
+        width: 60vw;
+        height: 70vw;
     }
 
     .five a {
+        color: #ffffff;
         margin-top: 5vh;
         width: 50%;
         font-family: 'Morison';
         font-size: 4vh;
         text-decoration: none;
-        color: #000000;
         text-align: center;
     }
 
@@ -1071,13 +1098,17 @@ overflow-x: hidden;
 
 
     .five p {
+        position: absolute;
+        top: 40vw;
+        z-index: 3;
+        filter: opacity(0);
         text-align: center;
         width: 50%;
-        color: #525252;
-        font-size: 1.8vh;
+        color: #ffffff;
+        font-size: 2vh;
         font-family: 'Paul';
         font-weight: 300;
-        line-height: 5vh;
+        line-height: 5vw;
     }
 
 
@@ -1119,7 +1150,6 @@ overflow-x: hidden;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        box-shadow: 5px 5px 5px #a7a5a5;
         background-color: #ffffff;
         padding: 0.5rem;
         text-align: center;
@@ -1128,7 +1158,7 @@ overflow-x: hidden;
         /* Masque le texte par défaut */
     }
 
-    .skills img {
+    .skills:hover .skills img {
         width: 50%;
         margin-bottom: 1rem;
     }

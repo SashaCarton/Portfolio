@@ -37,7 +37,6 @@ body h1,p{
     text-decoration: none;
     color: #222222;
     font-size: 1.5vw;
-    font-weight: bold;
     font-family: 'Morison', sans-serif;
     transition: 0.5s;
     border: solid 1px #222222;
@@ -47,4 +46,13 @@ body h1,p{
     color: white;
     transition: 0.5s;
     border: solid 1px white;
+}
+@media only screen and (max-width: 959px) {
+    .container{
+        margin-top: 20vw;
+    }
+    .portfolio{
+        width: 60vw;
+        font-size: 4vw;
+    }
 }
